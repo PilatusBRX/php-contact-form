@@ -1,0 +1,109 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: #fff;
+}
+
+section{
+	
+	padding: 40px;
+}
+
+section .text{
+	width: 90%;
+	max-width: 400px;
+	margin: auto;
+	text-align: center;
+	margin-bottom: 50px;
+}
+section .container{
+
+	width: 90%;
+	max-width: 750px;
+	margin: auto;
+	
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: center;
+	
+}
+
+section .container input[type="text"],
+section .container input[type="email"]{
+	flex-grow: 1;
+	width: 48.3%;
+	height: 45px;
+	margin: 7px 4px;
+	padding-left: 10px;
+	border: none;
+	outline: none;
+	font-size: 14px;
+	background: #eee;
+	border-top: 2px solid transparent;
+
+}
+section .container input[type="text"]:nth-child(3){
+	width: 98%;
+	border: none;
+	outline: none;
+	margin-bottom: 5px;
+	margin-bottom: 10px;
+	
+}
+section .container textarea{
+	width: 98%;
+	height: 100%;
+	max-height: 250px;
+	min-height: 100px;
+	padding-left: 10px;
+	padding-top: 10px;
+	border: none;
+	outline: none;
+	font-size: 14px;
+	margin-bottom: 15px;
+	background: #eee;
+	border-top: 2px solid transparent;
+
+}
+section .container input[type="submit"]{
+	
+	border: none;
+	background: #f9f9f9;
+	color: #333;
+	width: 20%;
+	padding:  15px 20px;
+	cursor: pointer;
+	font-weight: bold;
+	background: #eee;
+	font-size: 14px;
+}
+section .container textarea:hover,
+section .container input[type="text"]:hover,
+section .container input[type="email"]:hover{
+	border-top: 2px solid #c0c0c0;
+}
+
+a.btn-success{
+
+text-decoration: none;
+color: #ffff;
+background: #dd55ff;
+padding: 10px;
+
+
+}
+
+@media (max-width: 959px) {
+	section .container input[type="text"],
+	section .container input[type="text"]:nth-child(3),
+	section .container input[type="email"],
+	section .container textarea{
+	width: 100%;
+	margin: 10px;
+}
